@@ -1,2 +1,5 @@
+import { writeFile } from 'fs';
+
 let name = process.argv[2];
-console.log(`hello ${name.toUpperCase()} HOW ARRREEE YYYOOUUUUUU!??!?!?!`);
+
+writeFile('data.json', name, error => console.log('err ->',error) )
